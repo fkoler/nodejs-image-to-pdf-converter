@@ -1,0 +1,66 @@
+p.title {
+    font-size: 30pt;
+    color: whitesmoke;
+    background-color: #1f2428;
+}
+
+p#selected-files {
+    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+label {
+    display: inline-block;
+    font-size: 25pt;
+    cursor: pointer;
+    padding: 5px 45px;
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: #0d6efd;
+}
+
+label:hover {
+    border: 2px solid black;
+}
+
+input[type=file] {
+    display: none;
+}
+
+input[type=submit] {
+    display: none;
+    font-size: 16pt;
+    cursor: pointer;
+    padding: 5px 25px;
+    border-radius: 25px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+#selected-files {
+    color: #0d6efd;
+}
+
+@media screen and (max-width: 380px) {
+    p.title {
+        font-size: 25pt;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    p.title {
+        font-size: 22pt;
+    }
+
+    label {
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    label {
+        padding: 5px 35px;
+    }
+}
